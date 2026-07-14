@@ -1,4 +1,4 @@
-# UFC Outcome Model
+# UFC Prediction Model
 
 A reproducible UFC bout-outcome research project built with CatBoost. The
 pipeline uses chronological validation, corner-symmetrized training data,
@@ -9,7 +9,7 @@ This repository is a cleaned public version of a personal research project.
 It does **not** include the source dataset, trained model files, exact
 bankroll-sizing rules, or proprietary wagering thresholds.
 
-## What the project demonstrates
+## Project features
 
 - chronological feature construction intended to avoid future-data leakage
 - time-decayed and finish-adjusted fighter Elo ratings
@@ -19,7 +19,7 @@ bankroll-sizing rules, or proprietary wagering thresholds.
 - holdout evaluation with accuracy, Brier score, log loss, and ROC AUC
 - optional comparison of model probabilities with no-vig market probabilities
 
-## Repository structure
+## Repo structure
 
 ```text
 .
@@ -80,10 +80,6 @@ CSV at:
 ```text
 data/ufc-master.csv
 ```
-
-Do not republish a third-party dataset unless its license explicitly permits
-redistribution. The code validates the required schema and reports missing
-columns.
 
 ## Train and evaluate
 
@@ -162,8 +158,3 @@ test partition remains untouched.
 This project is for research and portfolio demonstration. It is not financial
 advice, does not guarantee profitable predictions, and should not be used as
 the sole basis for wagering decisions.
-
-## License
-
-No license is included by default. Add one only after deciding how you want
-others to be allowed to use, modify, and redistribute the code.
